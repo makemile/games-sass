@@ -31,21 +31,23 @@ main {
 .perfil {
   width: 50%;
   padding-top: 50px;
-  color: #FFFFFF;
-  background-color: #8841DA;
+  color: #ffffff;
+  background-color: #8841da;
 }
 .perfil__avatar {
   display: block;
   margin: 0 auto;
   border-radius: 50em;
 }
-.perfil__nombre, .perfil__minibio h2 {
+.perfil__nombre,
+.perfil__minibio h2 {
   text-align: center;
   font-size: 20px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
-.perfil__titulo, .perfil__minibio h3 {
+.perfil__titulo,
+.perfil__minibio h3 {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -57,12 +59,12 @@ main {
   width: 100px;
   height: 40px;
   margin: 15px auto;
-  padding-top: 15px;
+  padding: 7px;
   border-radius: 20px;
   text-decoration: none;
   text-align: center;
-  color: #FFFFFF;
-  color: rgba(51, 51, 51, 0.2);
+  color: #ffffff;
+  color: rgba(51, 51, 51, 0.8);
   border: 2px solid rgba(255, 255, 255, 0.3);
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -71,17 +73,17 @@ main {
 .perfil__minibio {
   margin: 0 auto;
   padding-top: 20px;
+  line-height: 1.8rem;
 }
 .estadistica--perfil {
   display: flex;
   width: 50%;
-  height: 90px;
-  padding-top: 15px;
+  padding: 15px;
   margin: 0 auto;
   justify-content: space-around;
   color: #333333;
   border-radius: 20px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.5);
 }
 .estadistica--perfil h3 {
@@ -103,11 +105,11 @@ main {
 .ubicacion--perfil {
   width: 50%;
   height: 90px;
-  margin: 30px auto 0 auto;
+  margin: 30px auto 30px auto;
   padding: 20px 0 0 50px;
   color: #333333;
   border-radius: 20px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.5);
 }
 .ubicacion--perfil i {
@@ -133,21 +135,34 @@ main {
 .galeria {
   width: 60%;
   margin: 0 auto;
-  height: 10px auto;
-  padding: 20px 0px 0px 30px;
-  justify-content: space-evenly;
+  padding: 15px 0px 15px 30px;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
   color: #333333;
   border-radius: 20px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.5);
+}
+.galeria__content {
+  display: flex;
+  align-items: flex-end;
 }
 .galeria__foto-principal {
   float: left;
   margin-right: 10px;
 }
-.galeria__foto-adicionales img {
+.galeria__foto-principal {
+  width: 155px;
+}
+.galeria__fotos-adicionales img {
   height: 70px;
   margin: 5px 0px 0px 5px;
+}
+.galeria__fotos-adicionales {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 .galeria h2 {
   margin-bottom: 10px;
@@ -163,4 +178,18 @@ main {
 .articulos {
   width: 40%;
   padding: 50px 0 0 50px;
-}/*# sourceMappingURL=ejercicio-sass.css.map */
+}
+
+.articulo {
+  margin-bottom: 75px;
+  border-bottom: 3px solid #8841da;
+}
+.articulo__titulo {
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.articulo__descripcion {
+  margin-bottom: 30px;
+  padding-right: 100px;
+} /*# sourceMappingURL=ejercicio-sass.css.map */
